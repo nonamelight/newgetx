@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/src/services/text_formatter.dart';
 
 import 'package:flutter/material.dart';
-import 'package:newgetx/tools/g_design.dart';
+import 'package:itmbti/tools/g_design.dart';
 
 class GButton {
   Widget BaseButton({
@@ -41,6 +41,57 @@ class GButton {
         ),
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(enabledMouseCursor: mouseCursorShape, padding: EdgeInsets.all(0), primary: enabled ? color : color_grey, side: BorderSide(style: borderWidth == 0 ? BorderStyle.none : BorderStyle.solid, width: borderWidth, color: enabled ? bordercolor : disableBorderColor)),
+      ),
+    );
+  }
+
+  Widget RoundButton({
+    required String title,
+    required void Function()? onPressed,
+    double width = 150,
+    double height = 32,
+    Color color = Colors.blue,
+    Color bordercolor = Colors.blue,
+    Color fontcolor = Colors.white,
+    Color disableColor = color_grey,
+    Color disableBorderColor = color_grey,
+    Color disableFontColor = Colors.white,
+    double borderWidth = 1,
+    double marginTop = 0,
+    double marginLeft = 0,
+    double marginRight = 0,
+    double marginBottom = 0,
+    MouseCursor? mouseCursorShape = SystemMouseCursors.click,
+    //SystemMouseCursors.basic
+    bool enabled = true,
+  }) {
+    return Container(
+      width: width,
+      height: height,
+      margin: EdgeInsets.only(
+        top: marginTop,
+        left: marginLeft,
+        right: marginRight,
+        bottom: marginBottom,
+      ),
+      decoration: BoxDecoration(
+        color: color,
+        border: Border.all(
+          style: BorderStyle.solid,
+          color: Colors.white,
+          width: 1,
+        ),
+        borderRadius: const BorderRadius.all(
+          Radius.circular(15.0),
+        ),
+      ),
+      child: TextButton(
+        child: Text(
+          title,
+          style: TextStyle(color: fontcolor),
+        ),
+        onPressed: onPressed,
+        // style: ElevatedButton.styleFrom(enabledMouseCursor: mouseCursorShape, padding: EdgeInsets.all(0), primary: enabled ? color : color_grey, side: BorderSide(style: borderWidth == 0 ? BorderStyle.none : BorderStyle.solid, width: borderWidth, color: enabled ? bordercolor : disableBorderColor)),
       ),
     );
   }

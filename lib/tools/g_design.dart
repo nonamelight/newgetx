@@ -30,6 +30,7 @@ const Color color_alert_red = Color(0xffd99694); //경고등에 사용할 연한
 const Color color_white = Color(0xffffffff); // 흰색
 const Color color_box_grey = Color(0xff333F50); // 버튼에 적용할 짙은 회색
 const Color color_bright_black = Color(0xff262626); //약간 밝은 검정색
+const Color color_yellow = Color(0xfffcffb0);
 
 //글자 사이즈 설정
 const double size_font_main_left_menu = 14.0; //메인화면 왼쪽 메뉴 글자 크기

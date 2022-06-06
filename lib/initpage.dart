@@ -1,6 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:itmbti/fistpage.dart';
+import 'package:itmbti/tools/g_button.dart';
+import 'package:itmbti/tools/g_design.dart';
+import 'package:itmbti/tools/g_lib.dart';
 
 class InitPage extends StatefulWidget {
   const InitPage({Key? key}) : super(key: key);
@@ -21,7 +25,38 @@ class _InitPageState extends State<InitPage> {
       body: Container(
         width: ScreenWidth,
         height: ScreenHeight,
-        child: const Center(child: Text('ho')),
+        color: color_deep_blue,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Text(
+                  'IT ',
+                  style: TextStyle(color: Colors.white, fontSize: 80),
+                ),
+                Text(
+                  'MBTI',
+                  style: TextStyle(color: Colors.white, fontSize: 40),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                GButton().RoundButton(
+                    title: 'START',
+                    color: Colors.white,
+                    fontcolor: color_deep_blue,
+                    onPressed: () {
+                      Get.toNamed('/first');
+                    })
+              ],
+            )
+          ],
+        ),
       ),
     );
   }

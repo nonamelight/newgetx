@@ -2,7 +2,7 @@
 //*****************************************************************************//
 
 import 'package:flutter/cupertino.dart';
-import 'package:newgetx/tools/delphi_func.dart';
+import 'package:itmbti/tools/delphi_func.dart';
 
 class Codes {
   List<TextEditingController> editText = [];

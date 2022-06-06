@@ -1,4 +1,4 @@
-package com.example.newgetx
+package com.gandalp.itmbti
 
 import io.flutter.embedding.android.FlutterActivity
 
