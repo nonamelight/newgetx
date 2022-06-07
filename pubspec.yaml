@@ -25,9 +25,36 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-   - assets/firstpage.jpg
    - assets/meetpeople.jpg
    - assets/working.jpg
+   - assets/firstpage.jpg
+   - assets/firstpage2.jpg
+   - assets/firstpage3.jpg
+   - assets/firstpage4.jpg
+   - assets/firstpage5.jpg
+   - assets/firstpage6.jpg
+   - assets/firstpage7.jpg
+   - assets/second1.jpg
+   - assets/second2.jpg
+   - assets/second3.jpg
+   - assets/second4.jpg
+   - assets/second5.jpg
+   - assets/second6.jpg
+   - assets/second7.jpg
+   - assets/third1.jpg
+   - assets/third2.jpg
+   - assets/third3.jpg
+   - assets/third4.jpg
+   - assets/third5.jpg
+   - assets/third6.jpg
+   - assets/third7.jpg
+   - assets/fourth1.jpg
+   - assets/fourth2.jpg
+   - assets/fourth3.jpg
+   - assets/fourth4.jpg
+   - assets/fourth5.jpg
+   - assets/fourth6.jpg
+   - assets/fourth7.jpg
 
   fonts:
     # - family: TMoneyBold

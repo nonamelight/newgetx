@@ -16,7 +16,6 @@ class _FirstPage extends State<FirstPage> {
   }
 
   @override
-  //ogege!!!!화면이 뜰때 데이터를 불러오기 위해 FutureBuilder를 사용해 볼것. https://eory96study.tistory.com/21
   Widget build(BuildContext context) {
     final double ScreenWidth = MediaQuery.of(context).size.width; //기기의 너비
     final double ScreenHeight = MediaQuery.of(context).size.height; // 기기의 높이
@@ -49,7 +48,7 @@ class _FirstPage extends State<FirstPage> {
                 height: 35,
                 title: '검사하러 가기 ☞',
                 onPressed: () {
-                  Get.toNamed('/second');
+                  Get.toNamed('/second1');
                 }),
           ],
         ),
