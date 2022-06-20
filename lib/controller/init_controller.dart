@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:get/get.dart';
 
 class GetxInitController extends GetxController {
@@ -7,4 +9,11 @@ class GetxInitController extends GetxController {
   int JorP = 0;
 
   int pageNum = 0;
+
+  RxBool isLoading = true.obs;
+  Future<bool> Loading() async {
+    await Future.delayed(Duration(seconds: 3));
+    isLoading.value = false;
+    return true;
+  }
 }

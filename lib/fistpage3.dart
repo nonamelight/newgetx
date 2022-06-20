@@ -68,6 +68,7 @@ class _FirstPage3 extends State<FirstPage3> {
         height: 35,
         onPressed: () {
           getxInitController.EorI = getxInitController.EorI + addPoint;
+          Get.offAll(() => FirstPage3());
           Get.toNamed('/second3');
         },
         title: title);

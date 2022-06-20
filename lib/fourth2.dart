@@ -68,6 +68,7 @@ class _Fourth2 extends State<Fourth2> {
         height: 35,
         onPressed: () {
           getxInitController.JorP = getxInitController.JorP + addPoint;
+          Get.offAll(() => Fourth2());
           Get.toNamed('/first3');
         },
         title: title);

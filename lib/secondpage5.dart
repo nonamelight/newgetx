@@ -68,6 +68,7 @@ class _SecondPage5 extends State<SecondPage5> {
         height: 35,
         onPressed: () {
           getxInitController.NorS = getxInitController.NorS + addPoint;
+          Get.offAll(() => SecondPage5());
           Get.toNamed('/third5');
         },
         title: title);

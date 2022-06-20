@@ -68,6 +68,7 @@ class _Third3 extends State<Third3> {
         height: 35,
         onPressed: () {
           getxInitController.TorF = getxInitController.TorF + addPoint;
+          Get.offAll(() => Third3());
           Get.toNamed('/fourth3');
         },
         title: title);

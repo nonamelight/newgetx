@@ -38,17 +38,19 @@ class _FirstPage extends State<FirstPage> {
               margin: EdgeInsets.only(top: margin_main_panel),
               child: Center(
                 child: Text(
-                  '내 성격에 맞는 IT 직군은 무엇일까?',
+                  '내 성격에 맞는 IT 직업은 무엇일까?',
                   style: TextStyle(fontSize: 20),
                 ),
               ),
             ),
             GButton().RoundButton(
                 color: color_deep_blue,
-                height: 35,
+                height: 40,
                 title: '검사하러 가기 ☞',
                 onPressed: () {
+                  Get.offAll(() => FirstPage());
                   Get.toNamed('/second1');
+                  // Get.toNamed('/result');
                 }),
           ],
         ),

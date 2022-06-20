@@ -68,6 +68,7 @@ class _SecondPage7 extends State<SecondPage7> {
         height: 35,
         onPressed: () {
           getxInitController.EorI = getxInitController.EorI + addPoint;
+          Get.offAll(() => SecondPage7());
           Get.toNamed('/third7');
         },
         title: title);

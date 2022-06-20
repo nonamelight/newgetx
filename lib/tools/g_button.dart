@@ -78,7 +78,7 @@ class GButton {
         color: color,
         border: Border.all(
           style: BorderStyle.solid,
-          color: Colors.white,
+          color: bordercolor,
           width: 1,
         ),
         borderRadius: const BorderRadius.all(
