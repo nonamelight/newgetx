@@ -1,5 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:itmbti/MBTI_INFJ.dart';
+import 'package:itmbti/MBTI_INTJ.dart';
+import 'package:itmbti/MBTI_ISFJ.dart';
+import 'package:itmbti/MBTI_ISTP.dart';
+import 'package:itmbti/mbti_ENFJ.dart';
+import 'package:itmbti/mbti_ENFP.dart';
+import 'package:itmbti/mbti_ENTJ.dart';
+import 'package:itmbti/mbti_ENTP.dart';
+import 'package:itmbti/mbti_ESFJ.dart';
+import 'package:itmbti/mbti_ESFP.dart';
+import 'package:itmbti/mbti_ESTJ.dart';
+import 'package:itmbti/mbti_ESTP.dart';
+import 'package:itmbti/mbti_INFP.dart';
+import 'package:itmbti/mbti_INTP.dart';
+import 'package:itmbti/mbti_ISFP.dart';
+import 'package:itmbti/mbti_ISTJ.dart';
 import 'package:itmbti/controller/init_controller.dart';
 import 'package:itmbti/fistpage.dart';
 import 'package:itmbti/fistpage1.dart';
@@ -77,6 +93,23 @@ void main() async {
       GetPage(name: '/fourth7', page: () => Fourth7(), transition: Transition.rightToLeftWithFade), //여행 계획은 상세한 일정표 보다는 대략적인 리스트에 가깝다
       //Result
       GetPage(name: '/result', page: () => ResultMBTI(), transition: Transition.rightToLeftWithFade), //결과페이지
+      //MBTI
+      GetPage(name: '/ISTJ', page: () => ISTJ(), transition: Transition.rightToLeftWithFade), //ISTJ
+      GetPage(name: '/ISFJ', page: () => ISFJ(), transition: Transition.rightToLeftWithFade), //ISFJ
+      GetPage(name: '/INFJ', page: () => INFJ(), transition: Transition.rightToLeftWithFade), //INFJ
+      GetPage(name: '/INTJ', page: () => INTJ(), transition: Transition.rightToLeftWithFade), //INTJ
+      GetPage(name: '/ISTP', page: () => ISTP(), transition: Transition.rightToLeftWithFade), //ISTP
+      GetPage(name: '/ISFP', page: () => ISFP(), transition: Transition.rightToLeftWithFade), //ISFP
+      GetPage(name: '/INFP', page: () => INFP(), transition: Transition.rightToLeftWithFade), //INFP
+      GetPage(name: '/INTP', page: () => INTP(), transition: Transition.rightToLeftWithFade), //INTP
+      GetPage(name: '/ESTP', page: () => ESTP(), transition: Transition.rightToLeftWithFade), //ESTP
+      GetPage(name: '/ESFP', page: () => ESFP(), transition: Transition.rightToLeftWithFade), //ESFP
+      GetPage(name: '/ENFP', page: () => ENFP(), transition: Transition.rightToLeftWithFade), //ENFP
+      GetPage(name: '/ENTP', page: () => ENTP(), transition: Transition.rightToLeftWithFade), //ENTP
+      GetPage(name: '/ESTJ', page: () => ESTJ(), transition: Transition.rightToLeftWithFade), //ESTJ
+      GetPage(name: '/ESFJ', page: () => ESFJ(), transition: Transition.rightToLeftWithFade), //ESFJ
+      GetPage(name: '/ENJF', page: () => ENFJ(), transition: Transition.rightToLeftWithFade), //ENJF
+      GetPage(name: '/ENTJ', page: () => ENTJ(), transition: Transition.rightToLeftWithFade), //ENTJ
     ],
     // },
   ));

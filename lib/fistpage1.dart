@@ -70,7 +70,7 @@ class _FirstPage1 extends State<FirstPage1> {
           getxInitController.EorI = getxInitController.EorI + addPoint;
 
           Get.offAll(() => FirstPage1());
-          Get.toNamed('/third');
+          Get.toNamed('/second1');
         },
         title: title);
   }

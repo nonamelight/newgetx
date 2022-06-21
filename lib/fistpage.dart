@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:itmbti/controller/init_controller.dart';
 import 'package:itmbti/tools/g_button.dart';
 import 'package:itmbti/tools/g_design.dart';
 
@@ -10,9 +11,11 @@ class FirstPage extends StatefulWidget {
 }
 
 class _FirstPage extends State<FirstPage> {
+  GetxInitController getxInitController = Get.put(GetxInitController());
   @override
   void initState() {
     super.initState();
+    getxInitController.Clear();
   }
 
   @override
@@ -35,12 +38,26 @@ class _FirstPage extends State<FirstPage> {
               ),
             ),
             Container(
+              height: 80,
               margin: EdgeInsets.only(top: margin_main_panel),
-              child: Center(
-                child: Text(
-                  '내 성격에 맞는 IT 직업은 무엇일까?',
-                  style: TextStyle(fontSize: 20),
-                ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Center(
+                    child: Text(
+                      '내 성격에 맞는 IT 직업은 무엇일까?',
+                      style: TextStyle(fontSize: 20),
+                    ),
+                  ),
+                  Text(
+                    '※질문은 간단한 성향파악이므로 재미로만 즐겨주시기 바랍니다',
+                    style: TextStyle(fontSize: 12),
+                  ),
+                  Text(
+                    '소요시간 : 3~5분',
+                    style: TextStyle(fontSize: 12, color: Colors.blue),
+                  ),
+                ],
               ),
             ),
             GButton().RoundButton(
@@ -49,8 +66,8 @@ class _FirstPage extends State<FirstPage> {
                 title: '검사하러 가기 ☞',
                 onPressed: () {
                   Get.offAll(() => FirstPage());
-                  Get.toNamed('/second1');
-                  // Get.toNamed('/result');
+                  // Get.toNamed('/first1');
+                  Get.toNamed('/ISFJ');
                 }),
           ],
         ),
