@@ -50,7 +50,7 @@ class _FirstPage extends State<FirstPage> {
                     ),
                   ),
                   Text(
-                    '※질문은 간단한 성향파악이므로 재미로만 즐겨주시기 바랍니다',
+                    '※간단한 성향파악과 결과이므로 재미로만 즐겨주시기 바랍니다',
                     style: TextStyle(fontSize: 12),
                   ),
                   Text(
@@ -67,7 +67,7 @@ class _FirstPage extends State<FirstPage> {
                 onPressed: () {
                   Get.offAll(() => FirstPage());
                   // Get.toNamed('/first1');
-                  Get.toNamed('/ISFJ');
+                  Get.toNamed('/INTJ');
                 }),
           ],
         ),

@@ -60,6 +60,10 @@ flutter:
    - assets/systemexcel.png
    - assets/baemin.png
    - assets/code.png
+   - assets/CS.png
+   - assets/cs2.png
+   - assets/ds.png
+   - assets/dogai.png
 
   fonts:
     # - family: TMoneyBold
