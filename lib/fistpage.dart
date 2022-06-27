@@ -67,7 +67,7 @@ class _FirstPage extends State<FirstPage> {
                 onPressed: () {
                   Get.offAll(() => FirstPage());
                   // Get.toNamed('/first1');
-                  Get.toNamed('/INTJ');
+                  Get.toNamed('/ESFJ');
                 }),
           ],
         ),

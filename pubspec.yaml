@@ -64,6 +64,24 @@ flutter:
    - assets/cs2.png
    - assets/ds.png
    - assets/dogai.png
+   - assets/monitoring.png
+   - assets/forensic.png
+   - assets/unrealmain.png
+   - assets/unitymain.png
+   - assets/gamestudy.png
+   - assets/naverhtml.png
+   - assets/testhk.png
+   - assets/kisahk.png
+   - assets/binary.png
+   - assets/nettools.png
+   - assets/networkengineer.png
+   - assets/cisco.png
+   - assets/consult.png
+   - assets/imbeded.png
+   - assets/gamegraphic.png
+   - assets/unrealcity.png
+   - assets/crying.png
+   - assets/naverz.png
 
   fonts:
     # - family: TMoneyBold
